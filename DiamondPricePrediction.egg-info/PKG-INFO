@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: DiamondPricePrediction
+Version: 0.0.1
+Author: Asheer Ahmad
+Author-email: asheerahmadkmt@gmail.com
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: sklearn
+Requires-Dist: flask
