@@ -144,6 +144,8 @@ ENV/
 env.bak/
 venv.bak/
 myvenv
+clean_env/
+practice_venv/
 
 # Spyder project settings
 .spyderproject
@@ -206,11 +208,3 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
-
-
-
-
-.vscode/
-artifacts/*.pkl
-clean_env/
-practice_venv/
