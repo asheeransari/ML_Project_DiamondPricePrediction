@@ -212,3 +212,5 @@ __marimo__/
 
 .vscode/
 artifacts/*.pkl
+clean_env/
+practice_venv/
