@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Price Prediction</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+        }
+
+        .container {
+            width: 60%;
+            margin: 60px auto;
+            background: white;
+            color: #333;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #2575fc;
+        }
+
+        .input-group {
+            margin-bottom: 18px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        input:focus,
+        select:focus {
+            outline: none;
+            border-color: #2575fc;
+            box-shadow: 0 0 6px rgba(37, 117, 252, 0.4);
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            margin-top: 25px;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            border: none;
+            color: white;
+            font-size: 20px;
+            border-radius: 40px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+{% if result is not defined %}
+
+<div class="container">
+    <h2>Diamond Price Prediction</h2>
+
+    <form action="/predict" method="post">
+
+        <div class="input-group">
+            <label>Carat</label>
+            <input type="text" name="carat" placeholder="Enter Carat">
+        </div>
+
+        <div class="input-group">
+            <label>Cut</label>
+            <select name="cut">
+                <option>Ideal</option>
+                <option>Premium</option>
+                <option>Very Good</option>
+                <option>Good</option>
+                <option>Fair</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Color</label>
+            <select name="color">
+                <option>D</option>
+                <option>E</option>
+                <option>F</option>
+                <option>G</option>
+                <option>H</option>
+                <option>I</option>
+                <option>J</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Clarity</label>
+            <select name="clarity">
+                <option>I1</option>
+                <option>SI2</option>
+                <option>SI1</option>
+                <option>VS2</option>
+                <option>VS1</option>
+                <option>VVS2</option>
+                <option>VVS1</option>
+                <option>IF</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Depth</label>
+            <input type="text" name="depth" placeholder="Enter Depth">
+        </div>
+
+        <div class="input-group">
+            <label>Table</label>
+            <input type="text" name="table" placeholder="Enter Table">
+        </div>
+
+        <div class="input-group">
+            <label>X</label>
+            <input type="text" name="x" placeholder="Enter X">
+        </div>
+
+        <div class="input-group">
+            <label>Y</label>
+            <input type="text" name="y" placeholder="Enter Y">
+        </div>
+
+        <div class="input-group">
+            <label>Z</label>
+            <input type="text" name="z" placeholder="Enter Z">
+        </div>
+
+        <button type="submit">Predict Price</button>
+
+    </form>
+</div>
+
+{% endif %}
+
+</body>
+</html>
