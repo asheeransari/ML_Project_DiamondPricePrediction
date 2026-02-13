@@ -38,20 +38,20 @@ DiamondPricePrediction/<br>
 │<br>
 ├── application.py ----->            <i>Flask entry point</i><br>
 ├── src/<br>
-│   ├── components/ ----->          Data ingestion & transformation<br>
-│   ├── pipelines/ ----->          Training & prediction pipelines<br>
-│   ├── exception/ ----->          Custom exception handling<br>
-│   ├── logger/ ----->          Logging configuration<br>
+│   ├── components/ ----->          <i>Data ingestion & transformation</i><br>
+│   ├── pipelines/ ----->          <i>Training & prediction pipelines</i><br>
+│   ├── exception/ ----->          <i>Custom exception handling</i><br>
+│   ├── logger/ ----->          <i>Logging configuration</i><br>
 │<br>
-├── templates/ ----->             HTML templates<br>
+├── templates/ ----->             <i>HTML templates</i><br>
 │   ├── index.html<br>
 │   ├── form.html<br>
 │   ├── result.html<br>
 │<br>
-├── artifacts/ ----->               Saved model & preprocessing objects<br>
-├── notebooks/ ----->               EDA & model training notebooks<br>
-├── setup.py ----->               Package configuration<br>
-├── requirements.txt ----->          Project dependencies<br>
+├── artifacts/ ----->               <i>Saved model & preprocessing objects</i><br>
+├── notebooks/ ----->               <i>EDA & model training notebooks</i><br>
+├── setup.py ----->               <i>Package configuration</i><br>
+├── requirements.txt ----->          <i>Project dependencies</i><br>
 ├── README.md
 
 ## Steps Used in This Project
