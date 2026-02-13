@@ -36,22 +36,22 @@ The objective of this project is to build a regression-based machine learning mo
 ## Project Structure
 DiamondPricePrediction/<br>
 │<br>
-├── application.py<br>             # Flask entry point
+├── application.py            # Flask entry point<br>
 ├── src/<br>
-│   ├── components/  <br>           # Data ingestion & transformation
-│   ├── pipelines/   <br>           # Training & prediction pipelines
-│   ├── exception/  <br>            # Custom exception handling
-│   ├── logger/     <br>            # Logging configuration
+│   ├── components/           # Data ingestion & transformation<br>
+│   ├── pipelines/            # Training & prediction pipelines<br>
+│   ├── exception/            # Custom exception handling<br>
+│   ├── logger/               # Logging configuration<br>
 │<br>
-├── templates/    <br>              # HTML templates
+├── templates/                # HTML templates<br>
 │   ├── index.html<br>
 │   ├── form.html<br>
 │   ├── result.html<br>
 │<br>
-├── artifacts/   <br>               # Saved model & preprocessing objects
-├── notebooks/   <br>               # EDA & model training notebooks
-├── setup.py     <br>               # Package configuration
-├── requirements.txt  <br>          # Project dependencies
+├── artifacts/                # Saved model & preprocessing objects<br>
+├── notebooks/                # EDA & model training notebooks<br>
+├── setup.py                  # Package configuration<br>
+├── requirements.txt          # Project dependencies<br>
 ├── README.md
 
 ## Steps Used in This Project
