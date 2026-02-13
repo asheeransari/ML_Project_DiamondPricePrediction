@@ -36,7 +36,7 @@ The objective of this project is to build a regression-based machine learning mo
 ## Project Structure
 DiamondPricePrediction/<br>
 │<br>
-├── application.py            # Flask entry point<br>
+├── application.py<pre>            # Flask entry point</pre><br>
 ├── src/<br>
 │   ├── components/           # Data ingestion & transformation<br>
 │   ├── pipelines/            # Training & prediction pipelines<br>
